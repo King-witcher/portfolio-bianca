@@ -1,4 +1,4 @@
-import { ACESFilmicToneMapping, LinearToneMapping, NoToneMapping, ReinhardToneMapping, Scene, sRGBEncoding, WebGLRenderer } from 'three'
+import { ACESFilmicToneMapping, LinearToneMapping, NoToneMapping, PCFShadowMap, ReinhardToneMapping, Scene, sRGBEncoding, VSMShadowMap, WebGLRenderer } from 'three'
 import { RunOnTick } from './Time'
 import View from './View'
 import Camera from './Camera'
@@ -17,6 +17,8 @@ export default class Renderer {
     renderer.toneMapping = ACESFilmicToneMapping
     renderer.toneMappingExposure = 1
     renderer.setPixelRatio(view.pixelRatio)
+    renderer.shadowMap.enabled = true
+    renderer.shadowMap.type = VSMShadowMap
     this.view.onResize(this.onResize.bind(this))
   }
 

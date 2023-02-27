@@ -26,7 +26,7 @@ export default class Camera {
     orbitControls.dampingFactor = 0.1
     orbitControls.zoomSpeed = 2
     orbitControls.maxDistance = 2.5
-    orbitControls.minDistance = 0.5
+    orbitControls.minDistance = 0.4
 
     RunOnTick(orbitControls.update)
 
