@@ -25,17 +25,17 @@ export default class Experience {
     directional.position.set(0.3, 0.5, 0.3)
     directional.shadow.camera.far = 3
     directional.shadow.blurSamples = 20
-    directional.shadow.mapSize.set(4096, 4096)
+    directional.shadow.mapSize.set(1024, 1024)
+    directional.shadow.camera.scale.set(0.1, 0.1, 0.5)
     
     const directional2 = new DirectionalLight(0xffffff, 1)
     directional2.castShadow = true
     directional2.position.set(0.3, 0.5, -0.3)
     directional2.shadow.camera.far = 3
     directional2.shadow.blurSamples = 20
-    directional2.shadow.mapSize.set(4096, 4096)
-
-    const helper = new CameraHelper(directional.shadow.camera)
-    this.scene.add(light, directional, directional2, helper)
+    directional2.shadow.mapSize.set(1024, 1024)
+    directional2.shadow.camera.scale.set(0.1, 0.1, 0.5)
+    this.scene.add(light, directional, directional2)
 
     const loader = new GLTFLoader()
     loader.loadAsync(modelUrl, undefined).then(gltf => {
