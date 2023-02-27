@@ -1,5 +1,5 @@
-import { AmbientLight, BoxGeometry, Color, DirectionalLight, Mesh, MeshBasicMaterial, MeshPhongMaterial, Object3D, PointLight, Scene, Vector3 } from 'three'
-import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { AmbientLight, BoxGeometry, Color, DirectionalLight, Mesh, MeshBasicMaterial, Scene, Vector3 } from 'three'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import Renderer from './Renderer'
 import View from './View'
 import Camera from './Camera'
