@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint /**/* --fix"
+    "lint": "eslint \"src/**\" --fix"
   },
   "browserslist": {
     "production": [

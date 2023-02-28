@@ -7,14 +7,14 @@ const callbacks: TickCallback[] = []
 Tick()
 
 function Tick() {
-  window.requestAnimationFrame(Tick)
+    window.requestAnimationFrame(Tick)
 
-  const ellapsed = clock.getElapsedTime()
-  callbacks.forEach(callback => {
-    callback(ellapsed)
-  })
+    const ellapsed = clock.getElapsedTime()
+    callbacks.forEach(callback => {
+        callback(ellapsed)
+    })
 }
 
 export function RunOnTick(callback: TickCallback) {
-  callbacks.push(callback)
+    callbacks.push(callback)
 }
