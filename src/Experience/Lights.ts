@@ -1,9 +1,8 @@
-import { AmbientLight, DirectionalLight, } from 'three'
-import Collection from '../lib/Collection'
+import { AmbientLight, DirectionalLight, Group, } from 'three'
 
-export default class Lights extends Collection {
+export default class Lights extends Group {
     constructor () {
-        super('lights')
+        super()
 
         const ambient = new AmbientLight(0xffffff, 2)
     

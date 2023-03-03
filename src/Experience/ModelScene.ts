@@ -1,4 +1,4 @@
-import { AxesHelper, BoxGeometry, Mesh, MeshBasicMaterial, MeshStandardMaterial, Object3D, Scene as ThreeScene } from 'three'
+import { AxesHelper, Mesh, MeshStandardMaterial, Object3D, Scene as ThreeScene } from 'three'
 import Lights from './Lights'
 
 interface IModelSceneOptions { 
